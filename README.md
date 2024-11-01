@@ -12,6 +12,8 @@
     - [2. Form Inputs and attributes](#2-form-inputs-and-attributes)
     - [3. Multimedia Support:](#3-multimedia-support)
     - [4. HTML5 Api's](#4-html5-apis)
+    - [5. Canvas and SVG for Graphics](#5-canvas-and-svg-for-graphics)
+  - [HTML Document Structure](#html-document-structure)
 
 
 ## HTML5 Features
@@ -277,7 +279,7 @@
 
 1. Geolocation API: Retrieves the geographical location of the user.
     - <details>
-        <summary style="padding: 4px; border: 1px solid black; background-color: gray; border-radius: 5px">Example</summary>
+        <summary style="padding: 4px; border: 1px solid black; ">Example</summary>
 
         ```javascript
         navigator.geolocation.getCurrentPosition(function(position) {
@@ -328,11 +330,28 @@
       </details>
 5. History API: Manipulates browser history.
     - <details>
-        <summary style="padding: 4px; border: 1px solid black">Example</summary>
-     ```javascript
-     history.pushState({ page: 1 }, "title 1", "?page=1");
-     ``` 
+        <summary style="padding: 4px; border: 1px solid black; background-color: gray; border-radius: 5px">Example</summary>
+        
+        ```javascript
+        history.pushState({ page: 1 }, "title 1", "?page=1");
+        ``` 
+
+      </details>
 
 
+### 5. Canvas and SVG for Graphics
 
+- It supports drawing and animations directly on the web page.
+
+   - **`<canvas>`**: Used for rendering 2D graphics via JavaScript.
+     ```html
+     <canvas id="myCanvas" width="200" height="200"></canvas>
+     ```
+   - **SVG (Scalable Vector Graphics)**: XML-based format for vector images.
+     ```html
+     <svg width="100" height="100">
+       <circle cx="50" cy="50" r="40" fill="blue" />
+     </svg>
+     ```
  
+## HTML Document Structure
