@@ -14,6 +14,15 @@
     - [4. HTML5 Api's](#4-html5-apis)
     - [5. Canvas and SVG for Graphics](#5-canvas-and-svg-for-graphics)
   - [HTML Document Structure](#html-document-structure)
+    - [1. HTML Document Structure Basics](#1-html-document-structure-basics)
+    - [2. DOCTYPE Declaration](#2-doctype-declaration)
+    - [3. HTML Root Element](#3-html-root-element)
+    - [4. Head Section](#4-head-section)
+    - [5. Body Section](#5-body-section)
+    - [6. HTML Document Structure Example](#6-html-document-structure-example)
+    - [7. Best Practices for HTML Document Structure](#7-best-practices-for-html-document-structure)
+    - [8. Key Elements to Know](#8-key-elements-to-know)
+  - [SEO using HTML tags](#seo-using-html-tags)
 
 
 ## HTML5 Features
@@ -355,3 +364,103 @@
      ```
  
 ## HTML Document Structure
+
+### 1. HTML Document Structure Basics
+   - Every HTML document follows a standard structure consisting of the `<!DOCTYPE>`, `<html>`, `<head>`, and `<body>` tags.
+   - This structure provides the browser with the necessary information to render the page correctly.
+
+### 2. DOCTYPE Declaration
+   - The `<!DOCTYPE html>` declaration is the very first line of an HTML document.
+   - It tells the browser the version of HTML being used (HTML5).
+   - It is not a tag but an instruction to the browser for rendering mode.
+
+   ```html
+   <!DOCTYPE html>
+   ```
+
+### 3. HTML Root Element
+
+   - `<html>`: The root element that contains all other elements of the HTML document.
+   - Contains both the `<head>` and `<body>` sections.
+
+   ```html
+   <html lang="en">
+       <!-- The rest of the document goes here -->
+   </html>
+   ```
+
+### 4. Head Section
+
+   - The `<head>` section contains meta-information about the document, which is not displayed on the page.
+   - Common elements within the `<head>` include:
+
+     - **Meta Tags**: Used to define the character set, viewport settings, author, and description of the document.
+
+       ```html
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       ```
+
+     - **Title**: Defines the title displayed on the browser tab.
+
+       ```html
+       <title>Document Title</title>
+       ```
+
+     - **Link Tags**: Links to external resources like stylesheets and icons.
+
+       ```html
+       <link rel="stylesheet" href="styles.css">
+       <link rel="icon" href="favicon.ico">
+       ```
+
+     - **Script Tags**: Links to external JavaScript files, though it’s often recommended to place scripts at the end of the `<body>` for better performance.
+
+       ```html
+       <script src="script.js" defer></script>
+       ```
+
+### 5. Body Section
+   - The `<body>` section contains the content that is rendered on the page, such as text, images, links, and forms.
+   - This is where the primary structure and layout of the visible content is defined using HTML elements.
+
+   ```html
+   <body>
+       <!-- Visible content goes here -->
+   </body>
+   ```
+
+### 6. HTML Document Structure Example
+
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Basic HTML Document Structure</title>
+       <link rel="stylesheet" href="styles.css">
+       <script src="script.js" defer></script>
+   </head>
+   <body>
+       <h1>Welcome to My Website</h1>
+       <p>This is a sample HTML document structure.</p>
+   </body>
+   </html>
+   ```
+
+### 7. Best Practices for HTML Document Structure
+   - **Use Semantic HTML**: Use tags like `<header>`, `<footer>`, `<article>`, `<section>`, and `<aside>` to give meaning to your content and improve accessibility.
+   - **Organize the `<head>` Properly**: Ensure meta tags for character encoding and viewport settings are placed at the top of the `<head>` section.
+   - **Load CSS Before JS**: Always load CSS files before JavaScript files to avoid blocking page rendering.
+   - **Defer or Place Scripts at the End**: Use `defer` or `async` attributes for external JavaScript files, or place them just before the closing `</body>` tag for better page load performance.
+
+### 8. Key Elements to Know
+   - `<html lang="en">`: Sets the language attribute for accessibility and SEO.
+   - `<meta charset="UTF-8">`: Defines the character encoding to support most languages.
+   - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Ensures responsiveness by setting the viewport width to the device width.
+   - `<title>`: Defines the page title, which is important for SEO and bookmarking.
+   - `<link rel="stylesheet" href="styles.css">`: Links to the CSS file.
+   - `<script src="script.js" defer></script>`: Links to an external JavaScript file without blocking page rendering (using `defer`).
+
+## SEO using HTML tags
